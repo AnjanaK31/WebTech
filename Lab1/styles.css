@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background-color: antiquewhite;
+}
+.Header {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(173, 63, 30);
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width: 100%;
+    min-height: 100px;
+    background-color: brown;
+    display: flex;
+}
+.left{
+    width: 75%;
+    min-height: 50px;
+    background-color: rgba(209, 163, 102, 0.829);
+}
+
+.right{
+    width: 25%;
+    min-height: 50px;
+    background-color: grey;
+}
+
+.profile{
+    height: 120px;
+    margin: 0px 20px;
+    background-color: rgba(124, 40, 25, 0.904);
+    display: flex;
+}
+.profile>img{
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: brown;
+    margin-right: 20px;
+}
+
+.certications{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(201, 160, 108);
+}
+
+.links {
+    display: flex;
+    margin: 20px;
+    background-color: beige;
+    justify-content: space-between;
+}
+.link{
+    height: 50px;
+    aspect-ratio: 1;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(107, 102, 95);
+    transition: 0.3s;
+}
+
+.link:hover{
+    background-color: rgba(219, 200, 200, 0.89);
+}
+.projects{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(145, 130, 111);
+}
