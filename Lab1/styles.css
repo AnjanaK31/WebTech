@@ -1,75 +1,78 @@
-body{
-    padding: 0;
+/* General Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    left: 0;
-    top: 0;
-    background-color: antiquewhite;
-}
-.Header {
-    width: 100%;
-    min-height: 100px;
-    background-color: rgb(173, 63, 30);
-    display: flex;
-    justify-content: space-between;
-}
-.content{
-    width: 100%;
-    min-height: 100px;
-    background-color: brown;
-    display: flex;
-}
-.left{
-    width: 75%;
-    min-height: 50px;
-    background-color: rgba(209, 163, 102, 0.829);
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
 }
 
-.right{
-    width: 25%;
-    min-height: 50px;
-    background-color: grey;
+/* Header and Profile */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.profile{
-    height: 120px;
-    margin: 0px 20px;
-    background-color: rgba(124, 40, 25, 0.904);
-    display: flex;
-}
-.profile>img{
-    height: 100%;
-    aspect-ratio: 1;
+.profile img {
+    width: 100px;
     border-radius: 50%;
-    background-color: brown;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.certications{
-    width: 100%;
-    min-height: 100px;
-    background-color: rgb(201, 160, 108);
+.links a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-.links {
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
     display: flex;
-    margin: 20px;
-    background-color: beige;
     justify-content: space-between;
-}
-.link{
-    height: 50px;
-    aspect-ratio: 1;
-    margin: 10px;
-    padding: 5px;
-    background-color: rgb(107, 102, 95);
-    transition: 0.3s;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
 }
 
-.link:hover{
-    background-color: rgba(219, 200, 200, 0.89);
+/* Sections */
+.left-section, .right-section {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
 }
-.projects{
-    width: 100%;
-    min-height: 100px;
-    background-color: rgb(145, 130, 111);
+
+/* Headings and Lists */
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.certifications, .projects {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }
