@@ -1,78 +1,104 @@
-/* General Styling */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f9fc;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f8;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header and Profile */
+.resume-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
 .header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-.profile img {
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.profile-pic {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #a29bfe;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #2d3436;
+}
+
+.subheading {
+  font-size: 15px;
+  color: #636e72;
+  margin-bottom: 10px;
 }
 
 .links a {
-    color: #ecf0f1;
-    margin: 0 10px;
-    text-decoration: none;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6c5ce7;
+  font-weight: 500;
 }
 
 .links a:hover {
-    text-decoration: underline;
-}
-
-/* Main Container */
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    flex-wrap: wrap;
-    background-color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Sections */
-.left-section, .right-section {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-/* Headings and Lists */
-h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #2d3436;
+  border-bottom: 2px solid #dfe6e9;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
 ul {
-    list-style-type: square;
-    padding-left: 20px;
+  padding-left: 20px;
+  margin: 10px 0;
 }
 
 ul li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-.certifications, .projects {
-    background-color: #ffffff;
-    padding: 30px;
-    margin: 20px;
+/* Links in content */
+.card a {
+  color: #6c5ce7;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+  .resume-wrapper {
+    padding: 20px 10px;
+  }
+
+  .card {
+    padding: 20px;
+  }
 }
