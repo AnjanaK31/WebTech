@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+select {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
