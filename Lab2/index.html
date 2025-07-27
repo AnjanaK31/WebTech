@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+
+    <select id="city-select">
+      <option value="">-- Select a city --</option>
+      <option value="chennai">Chennai</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="delhi">Delhi</option>
+    </select>
+
+    <div id="weather-card" class="card hidden">
+      <h2 id="city-name"></h2>
+      <img id="icon" src="" alt="Weather Icon" />
+      <p id="temperature"></p>
+      <p id="condition"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
