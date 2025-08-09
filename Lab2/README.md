@@ -23,21 +23,32 @@ It displays temperature, humidity, wind speed, and a weather icon for the select
 
 ---
 
-## 📂 File Structure
+## File Structure
 Lab2/
+
 │── index.html # Main HTML structure
+
 │── styles.css # Styling for the app
+
 │── script.js # JavaScript logic for fetching and displaying data
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. **Clone the repository**:
+   
    git clone <repo-url>
+   
 2. **Navigate to the project folder:**
+   
    cd Lab2
+   
 3. **Open script.js and replace:**
+   
    const apiKey = '';
+
    **with your API key:**
+   
    const apiKey = 'YOUR_API_KEY';
-4. **Open index.html in your browser to use the app.**
+   
+5. **Open index.html in your browser to use the app.**
