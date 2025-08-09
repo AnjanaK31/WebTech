@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Enchante Registration</title>
+<link rel="stylesheet" href="styles.css" /> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<!-- Registration Form -->
+<form id="registrationForm">
+    <h2>Enchante Registration</h2>
+
+    <!-- Full Name Field -->
+    <label>Full Name<span>*</span></label>
+    <input type="text" id="name" required /> <!-- Required text input -->
+    <small class="error" id="nameError"></small> <!-- Error message placeholder -->
+
+    <!-- Email Field -->
+    <label>Email<span>*</span></label>
+    <input type="email" id="email" required /> <!-- Email input with validation -->
+    <small class="error" id="emailError"></small>
+
+    <!-- Phone Number Field -->
+    <label>Phone Number<span>*</span></label>
+    <input type="tel" id="phone" required /> <!-- Telephone number input -->
+    <small class="error" id="phoneError"></small>
+
+    <!-- Age Field -->
+    <label>Age<span>*</span></label>
+    <input type="number" id="age" required /> <!-- Number input for age -->
+    <small class="error" id="ageError"></small>
+
+    <!-- Gender Selection (Radio Buttons) -->
+    <label>Gender<span>*</span></label>
+    <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+    </div>
+    <small class="error" id="genderError"></small>
+
+    <!-- Committee Selection (Checkboxes) -->
+    <label>Commitee</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox" name="interests" value="Organising" /> Organising</label>
+        <label><input type="checkbox" name="interests" value="Hospitality" /> Hospitality</label>
+        <label><input type="checkbox" name="interests" value="Isai" /> Isai</label>
+    </div>
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button> <!-- Submits the form -->
+    <button type="reset">Reset</button>   <!-- Clears all fields -->
+</form>
+
+<!-- Link to external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
