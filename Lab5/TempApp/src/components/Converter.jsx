@@ -1,14 +1,14 @@
 import React from "react";
-function Converter({celsius, onChange}){
+// Functional Component of the input box to get user input of the Temperature in Celcius to Convert
+function Converter({celcius, onChange}){
     return(
         <div>
             <input
             type = "number"
-            value = {celsius}
-            onChange={(e) => onChange(Number(e.target.value))}
+            value = {celcius}
+            onChange = {(e) => onChange(Number(e.target.value))}
             />
-            <p> Enter celsius to convert</p>
+            <p>Enter the temperature in Celcius to convert</p>
         </div>
-    )
-}
-export default Converter;
+    );
+}export default Converter;

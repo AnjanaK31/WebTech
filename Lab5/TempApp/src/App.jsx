@@ -1,29 +1,30 @@
-import { useState } from 'react'
+import {useState} from "react";
 import './App.css'
-import TemperatureDisplay from "./components/TemperatureDisplay"
-import TemperatureControls from "./components/TemperatureControls"
-import Converter from "./components/Converter"
+import TemperatureControls from './components/TemperatureControls.jsx'
+import TemperatureDisplay from "./components/TemperatureDisplay.jsx"
+import Converter from "./components/Converter.jsx"
 
 function App() {
-  const [celsius, setcelsius] = useState(0);
-  const fahrenheit = (celsius * 9) / 5 + 32;
-
-  const handleIncrease = () => setcelsius((prev) => prev + 1);
-  const handleDecrease = () => setcelsius((prev) => prev - 1);
+  // Set UseState
+  const [celcius, setcelcius] = useState(0);
+  const farenheit = (celcius * 9)/5 + 32;
+  const handleIncrease = () => setcelcius((prev) => prev + 1);
+  const handleDecrease = () => setcelcius((prev) => prev - 1);
   const handleSet = (val) => {
-    if(!Number.isNan(val)){
-      setcelsius(val);
+    if(!Number.isNaN(val)){
+      setcelcius(val)
     }
   };
 
   return (
+    // Main Display Component with heading and all display items
     <div>
       <h1>Temperature Converter</h1>
-      <TemperatureDisplay celsius = {celsius} fahrenheit = {fahrenheit}/>
-      <Converter celsius = {celsius} onChange = {handleSet}/>
+      <TemperatureDisplay celcius = {celcius} farenheit = {farenheit}/>
+      <Converter celcius={celcius} onChange={handleSet}/>
       <TemperatureControls onIncrease = {handleIncrease} onDecrease = {handleDecrease}/>
     </div>
-  );
+  )
 }
 
-export default App
+export default App;
