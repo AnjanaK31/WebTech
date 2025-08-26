@@ -29,10 +29,14 @@ A simple and interactive registration form built with **HTML**, **CSS**, and **J
 
 ## Project Structure
 Lab3/
+
 │
 ├── index.html # Main HTML file (form structure)
+
 ├── styles.css # Styling
+
 ├── script.js # Validation logic
+
 └── README.md # Documentation
 
 ## Technologies Used
